@@ -1,0 +1,593 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+/*my code*/
+
+* {
+    text-decoration: none;  /*removes the underline on all text*/
+}
+
+/* body {
+    background-color: #f3f3f3;
+
+
+}
+*/
+
+@media (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+
+
+
+header {
+    background-color: #e28743;
+    width: 100%;
+    height: 100px;
+
+}
+
+header .header-brand {
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content; /*Navigation center*/
+    
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 16px;
+
+}
+
+header nav ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+header .header-cases {
+    display: none;
+}
+
+/*code to fit desktop version*/
+@media only screen and (min-width: 1000px) {
+   
+    header .header-brand {
+        margin: 31px 0px;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #fff;
+        float: left;
+    
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+               
+        
+    }
+    
+    
+    
+    header nav ul li a {
+        
+        line-height: 60px;
+    
+    }
+
+    header .header-cases {
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 38px;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0px 20px;
+        
+    }
+    
+}
+
+/*index page*/
+.video-back {
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.video-back .video-slide {
+
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-back .login {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+/****card code****/  
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -250px;
+    left: 200px;
+    width: 600px;
+    height: 1000px;
+    padding: 25px;
+
+	
+}
+
+.wrapper {
+        
+    --input-focus: #2596be;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --bg-color-alt: #ffffff21;
+    --main-color: #323232;
+    backdrop-filter: blur(10px);
+
+
+
+    /*--bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;*/
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* align-items: center; */
+  }
+  /* switch card */
+
+  .switch {
+    transform: translateY(-200px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50px;
+    height: 20px;
+    top: 0;
+  }
+  
+  .card-side::before {
+    position: absolute;
+    content: 'Log in';
+    left: -70px;
+    top: 0;
+    width: 100px;
+    text-decoration: underline;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .card-side::after {
+    position: absolute;
+    content: 'Sign up';
+    left: 70px;
+    top: 0;
+    width: 100px;
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-colorcolor);
+    transition: 0.3s;
+  }
+  
+  .slider:before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    left: -2px;
+    bottom: 2px;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 0 var(--main-color);
+    transition: 0.3s;
+  }
+  
+  .toggle:checked + .slider {
+    background-color: var(--input-focus);
+  }
+  
+  .toggle:checked + .slider:before {
+    transform: translateX(30px);
+  }
+  
+  .toggle:checked ~ .card-side:before {
+    text-decoration: none;
+  }
+  
+  .toggle:checked ~ .card-side:after {
+    text-decoration: underline;
+  }
+  
+
+.flip-card__inner {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    background-color: transparent;
+    perspective: 1000px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .toggle:checked ~ .flip-card__inner {
+    transform: rotateY(180deg);
+  }
+  
+  .toggle:checked ~ .flip-card__front {
+    box-shadow: none;
+  }
+  
+  .flip-card__front, .flip-card__back {
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  }
+  
+  .flip-card__back {
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+
+  .social{
+    margin-top: 30px;
+    display: flex;
+  }
+  .social div{
+    background: red;
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255,255,255,0.27);
+    color: #eaf0fb;
+    text-align: center;
+  }
+  .social div:hover{
+    background-color: rgba(255,255,255,0.47);
+  }
+  .social .fb{
+    margin-left: 25px;
+  }
+  .social i{
+    margin-right: 4px;
+  }
+  
+  .title {
+    margin: 20px 0 20px 0;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--main-color);
+  }
+  
+  .flip-card__input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .flip-card__input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .flip-card__input:focus {
+    border: 2px solid var(--input-focus);
+  }
+  
+  .flip-card__btn:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .flip-card__btn {
+    margin: 20px 0 20px 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  } 
+
+  
+
+
+/***end card code****/
+
+.wrapper {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+    background-color: rgba(255,255,255,0.13);
+    backdrop-filter: blur(10px);
+}
+
+/*********/
+
+
+
+/* background-image: url('img/banner.jpg');   */
+
+
+
+    
+
+/*footer*/
+
+footer {
+    width: 100%;
+    border-left: none;
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #2596be;
+    overflow: hidden; /*magically hide extend the footer to fit contents*/
+
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+    }
+    
+
+footer ul li a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    }
+
+.footer-links-survey {
+    display: none;
+
+}
+
+.footer-socialmedia {
+    width: 45px;
+    float: right;
+}
+
+.footer-socialmedia img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-links-survey {
+        display: block;
+    
+    }
+
+    footer ul {
+        
+        padding-right: 30px;
+    }
+
+    footer ul li p {
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #fff;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    
+
+
+
+
+
+}
